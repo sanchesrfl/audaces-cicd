@@ -1,0 +1,36 @@
+name: Delivery to AWS ECR
+
+#controle de workflow / gatilho
+on: 
+  push:
+    branches: [ main ]
+
+jobs: 
+
+  build:
+    name: Build Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Setup AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+          aws-region: us-east-1
+      - name: Login to AWS ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+      
+      - name: Build, tag, push.
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outpus.registry }}
+          ECR_REPOSITORY: audaces-repo
+          IMAGE_TAGE: audaces-repo
+        run: | 
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        
