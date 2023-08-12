@@ -27,7 +27,7 @@ jobs:
       
       - name: Build, tag, push.
         env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outpus.registry }}
+          ECR_REGISTRY: ${{ steps.login-ecr.output.registry }}
           ECR_REPOSITORY: teste3
           IMAGE_TAGE: teste3
         run: | 
