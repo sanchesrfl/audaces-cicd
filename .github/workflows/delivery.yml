@@ -28,8 +28,8 @@ jobs:
       - name: Build, tag, push.
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outpus.registry }}
-          ECR_REPOSITORY: audaces-repo
-          IMAGE_TAGE: audaces-repo
+          ECR_REPOSITORY: teste3
+          IMAGE_TAGE: teste3
         run: | 
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
