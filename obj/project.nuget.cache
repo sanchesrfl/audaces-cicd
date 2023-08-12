@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "83AnKxz1kRVEuPifxoU91buA+ffRI+s8rivjf8whHN5Is9o9p4/+DFeEFPF75ewOmeg1oVpnzrly9YSyIRhioA==",
+  "dgSpecHash": "h9WlRPcG07rCtn8SV4v7tXaTITj/pcpRa0aUKQS/h95mr9hsoxKHQigAH48bkAcJgpHJABRBUndfZkaJMM7Llw==",
   "success": true,
-  "projectFilePath": "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/hello.csproj",
+  "projectFilePath": "/home/rafa/Desktop/audaces-cicd/hello.csproj",
   "expectedPackageFiles": [
     "/home/rafa/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "/home/rafa/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",

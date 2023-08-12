@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/hello.csproj": {}
+    "/home/rafa/Desktop/audaces-cicd/hello.csproj": {}
   },
   "projects": {
-    "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/hello.csproj": {
+    "/home/rafa/Desktop/audaces-cicd/hello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/hello.csproj",
+        "projectUniqueName": "/home/rafa/Desktop/audaces-cicd/hello.csproj",
         "projectName": "hello",
-        "projectPath": "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/hello.csproj",
+        "projectPath": "/home/rafa/Desktop/audaces-cicd/hello.csproj",
         "packagesPath": "/home/rafa/.nuget/packages/",
-        "outputPath": "/home/rafa/Desktop/audaces_virtualizacao/aula_2/primeira_imagem_docker/obj/",
+        "outputPath": "/home/rafa/Desktop/audaces-cicd/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/rafa/.nuget/NuGet/NuGet.Config"
